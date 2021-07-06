@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula prática</title>
+    <style>
+        .card-container{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .card{
+            margin: 10px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-basis: 20%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .description{
+            text-align: center;
+            margin: 5px 2px;
+            font-size: 10px;
+        }
+        .price{
+            font-weight: 600;
+        }
+        .buy-button{
+            border-radius: 10px;
+            background-color: #fff;
+            border: 1px solid black;
+            padding: 5px;
+            margin: 5px 0;
+            cursor: pointer;
+        }
+        .buy-button:hover{
+            background-color: black;
+            color: #fff;
+        }
+        @media(max-width: 700px){
+            .buy-button{
+                width: 100%;
+                border-radius: 0;
+            }
+            .card{
+                flex-basis: 100%;
+            }
+            .description{
+                display: none;
+            }
+            img{
+                display: none;
+            }
+        }
+        div{
+            border:  1px solid black;
+            width:  200px;
+        }
+        img{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <div class="card">
+            <h3 class="product-name">Produto</h3>
+            <img src="https://images.unsplash.com/photo-1577705998148-6da4f3963bc8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="caixa de papelão fechada">
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore odit corporis omnis. </p>
+            <span class="price">Preço: XXXXXXXX</span>
+            <button class="buy-button">Adicionar ao carrinho</button>
+        </div>
+        <div class="card">
+            <h3 class="product-name">Produto</h3>
+            <img src="https://images.unsplash.com/photo-1577705998148-6da4f3963bc8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="caixa de papelão fechada">
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore odit corporis omnis. </p>
+            <span class="price">Preço: XXXXXXXX</span>
+            <button class="buy-button">Adicionar ao carrinho</button>
+        </div>
+        <div class="card">
+            <h3 class="product-name">Produto</h3>
+            <img src="https://images.unsplash.com/photo-1577705998148-6da4f3963bc8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="caixa de papelão fechada">
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore odit corporis omnis. </p>
+            <span class="price">Preço: XXXXXXXX</span>
+            <button class="buy-button">Adicionar ao carrinho</button>
+        </div>
+        <div class="card">
+            <h3 class="product-name">Produto</h3>
+            <img src="https://images.unsplash.com/photo-1577705998148-6da4f3963bc8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="caixa de papelão fechada">
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore odit corporis omnis. </p>
+            <span class="price">Preço: XXXXXXXX</span>
+            <button class="buy-button">Adicionar ao carrinho</button>
+        </div>
+        <div class="card">
+            <h3 class="product-name">Produto</h3>
+            <img src="https://images.unsplash.com/photo-1577705998148-6da4f3963bc8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="caixa de papelão fechada">
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore odit corporis omnis. </p>
+            <span class="price">Preço: XXXXXXXX</span>
+            <button class="buy-button">Adicionar ao carrinho</button>
+        </div>
+        <div class="card">
+            <h3 class="product-name">Produto</h3>
+            <img src="https://images.unsplash.com/photo-1577705998148-6da4f3963bc8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="caixa de papelão fechada">
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore odit corporis omnis. </p>
+            <span class="price">Preço: XXXXXXXX</span>
+            <button class="buy-button">Adicionar ao carrinho</button>
+        </div>
+        <div class="card">
+            <h3 class="product-name">Produto</h3>
+            <img src="https://images.unsplash.com/photo-1577705998148-6da4f3963bc8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="caixa de papelão fechada">
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore odit corporis omnis. </p>
+            <span class="price">Preço: XXXXXXXX</span>
+            <button class="buy-button">Adicionar ao carrinho</button>
+        </div>
+        <div class="card">
+            <h3 class="product-name">Produto</h3>
+            <img src="https://images.unsplash.com/photo-1577705998148-6da4f3963bc8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="caixa de papelão fechada">
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore odit corporis omnis. </p>
+            <span class="price">Preço: XXXXXXXX</span>
+            <button class="buy-button">Adicionar ao carrinho</button>
+        </div>
+    </div>
+
+</body>
+</html>
