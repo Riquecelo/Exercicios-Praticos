@@ -1,4 +1,4 @@
-# Exercicios-Praticos
+# Exercícios-Práticos
 ## Exercicios para iniciantes praticar HTML com CSS. O objetivo deste repositório é compartilhar exercícios que pratico e julgo serem interessantes de realizar
  
 Exercicio baseado no livro 'HTML & CSS Projete e Construa Websites- Jon Duckett'.<br>
