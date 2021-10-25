@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - display flex</title>
+    <style>
+        .flex{
+            /*width: 100%;*/
+            max-width: 300px;
+            padding: 10px;
+            border: 2px solid white;
+            display: flex;
+        }
+
+        .item{
+            background-color: aqua;
+            margin: 5px;
+            list-style: none;
+        }
+        body{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="flex">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+    <ul class="flex">
+        <li class="item">li 1</li>
+        <li class="item">li 2</li>
+        <li class="item">li 3</li>
+    </ul>
+    
+
+    <div class="flex">
+        <div class="flex">
+            <div class="item">item 1</div>
+            <div class="item">item 2</div>
+            <div class="item">item 3</div>
+        </div>
+        <ul class="flex">
+            <li class="item">li 1</li>
+            <li class="item">li 2</li>
+            <li class="item">li 3</li>
+        </ul>
+    </div>
+</body>
+</html>

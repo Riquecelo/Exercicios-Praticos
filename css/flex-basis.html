@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex basis</title>
+    <style>
+        .flex-container{
+            max-width: 300px;
+            border: 1px solid aqua;
+            display: flex;
+        }
+        .flex-container-1{
+            max-width: 500px;
+            border: 1px solid aqua;
+            display: flex;
+
+        }
+        .item{
+            background-color: chocolate;
+            color: white;
+            margin: 5px;
+            text-align: center;
+        }
+        .bauto{
+            flex-basis: auto;
+        }
+        .fg-1{
+            flex-grow: 1;
+        }
+        .basis-0{
+            flex-basis: 0;
+        }
+        .w100{
+            flex-basis:100px ;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Prática com flex-basis</h1>
+    <p>flex-basis auto</p>
+    <div class="flex-container">
+        <div class="item bauto fg-1">A</div>
+        <div class="item bauto fg-1">BBB</div>
+        <div class="item bauto fg-1">C</div>
+        <div class="item bauto fg-1">Defg</div>
+    </div>
+
+    <p>flex-basis 0 zero</p>
+    <div class="flex-container">
+        <div class="item basis-0 fg-1">A</div>
+        <div class="item basis-0 fg-1">BBB</div>
+        <div class="item basis-0 fg-1">C</div>
+        <div class="item basis-0 fg-1">Defg</div>
+    </div>
+    <div class="flex-container">
+        <div class="item basis-0 fg-1">Aaaaaaaaa</div>
+        <div class="item basis-0 fg-1">BBB</div>
+        <div class="item basis-0 fg-1">C</div>
+        <div class="item basis-0 fg-1">Defg</div>    
+    </div> 
+    <p>basis + width</p>
+    <div class="flex-container-1">
+        <div class="item w100" >Aaaaaaaaaaa</div>
+        <div class="item w100" >BBB</div>
+        <div class="item w100" >C</div>
+        <div class="item w100">Defg</div>
+    </div>
+</body>
+</html>

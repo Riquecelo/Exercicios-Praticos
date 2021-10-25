@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura básica e prática com flex</title>
+    <style>
+        .flex-container{
+            display: flex;
+            max-width: 400px;
+            border: 1px solid aquamarine;
+            margin-bottom: 10px;
+        }
+        .item{
+            background-color:mediumorchid;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+        .flex-1{
+            flex: 1;
+            /*grow = 1; shrink = 1; basis = 0*/
+        }
+        .flex-2{
+            flex: 2;
+            /*grow = 2; shrink = 1; basis = 0*/
+        }
+        .largura{
+            width: 200px;
+        }
+        .l-min{
+            min-width: 110px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estrutura básica e prática com flex</h1>
+    <p>flex-1</p>
+    <div class="flex-container">
+        <div class="item flex-1">A</div>
+        <div class="item flex-1">B</div>
+        <div class="item flex-1">C</div>
+        <div class="item flex-1">D</div>
+    </div>
+
+    <p>flex mix</p>
+    <div class="flex-container">
+        <div class="item flex-1">A</div>
+        <div class="item flex-2">B</div>
+        <div class="item flex-1">C</div>
+        <div class="item flex-2">D</div>
+    </div>
+
+    <p>largura ignorada pela basis</p>
+    <div class="flex-container">
+        <div class="item largura flex-1">A</div>
+        <div class="item largura flex-1">B</div>
+        <div class="item largura flex-1">C</div>
+        <div class="item largura flex-1">D</div>
+    </div>
+
+    <p>largura min e max é mais forte que o basis</p>
+    <div class="flex-container">
+        <div class="item l-min flex-1">A</div>
+        <div class="item l-min flex-1">B</div>
+        <div class="item l-min flex-1">C</div>
+        <div class="item l-min flex-1">D</div>
+    </div>
+</body>
+</html>

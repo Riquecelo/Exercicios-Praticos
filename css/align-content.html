@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - aling content</title>
+    <style>
+        .container{
+            height: 400px;
+            max-width: 300px;
+            /*margin: 0 auto;*/
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid white;
+        }
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;color: white;
+        }
+        .center{
+            align-content: center;
+        }
+        .stretch{
+            align-content: stretch;
+        }
+        .start{
+            align-content: flex-start;
+        }
+        .end{
+            align-content: flex-end;
+        }
+        .between{
+            align-content: space-between;
+        }
+        .around{
+            align-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <div class="container">
+        <div class="item">Lorem ipsum dolor,</div>
+        <div class="item">sit amet consectetur adipisicing elit.</div>
+        <div class="item">Impedit dolorum perspiciatis voluptas dolore iste nulla quibusdam ipsa,</div>
+        <div class="item">officiis suscipit incidunt? Quibusdam,</div>
+        <div class="item"> maxime tenetur voluptas perspiciatis excepturi nemo accusamus!</div>
+        <div class="item">Quasi,</div>
+        <div class="item">reiciendis.</div>
+    </div>
+    <p>center</p>
+    <div class="container center">
+        <div class="item">Lorem ipsum dolor,</div>
+        <div class="item">sit amet consectetur adipisicing elit.</div>
+        <div class="item">Impedit dolorum perspiciatis voluptas dolore iste nulla quibusdam ipsa,</div>
+        <div class="item">officiis suscipit incidunt? Quibusdam,</div>
+        <div class="item"> maxime tenetur voluptas perspiciatis excepturi nemo accusamus!</div>
+        <div class="item">Quasi,</div>
+        <div class="item">reiciendis.</div>
+    </div>
+    <p>stretch</p>
+    <div class="container stretch">
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item">Lorem ipsum dolor.</div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item"> Lorem ipsum dolor</div>
+        <div class="item">Quasi,</div>
+        <div class="item">reiciendis.</div>
+    </div>
+    <p>flex-start</p>
+    <div class="container start">
+        <div class="item">Lorem ipsum dolor,</div>
+        <div class="item">sit amet consectetur adipisicing elit.</div>
+        <div class="item">Impedit dolorum perspiciatis voluptas dolore iste nulla quibusdam ipsa,</div>
+        <div class="item">officiis suscipit incidunt? Quibusdam,</div>
+        <div class="item"> maxime tenetur voluptas perspiciatis excepturi nemo accusamus!</div>
+        <div class="item">Quasi,</div>
+        <div class="item">reiciendis.</div>
+    </div>
+    <p>flex-end</p>
+    <div class="container end">
+        <div class="item">Lorem ipsum dolor,</div>
+        <div class="item">sit amet consectetur adipisicing elit.</div>
+        <div class="item">Impedit dolorum perspiciatis voluptas dolore iste nulla quibusdam ipsa,</div>
+        <div class="item">officiis suscipit incidunt? Quibusdam,</div>
+        <div class="item"> maxime tenetur voluptas perspiciatis excepturi nemo accusamus!</div>
+        <div class="item">Quasi,</div>
+        <div class="item">reiciendis.</div>
+    </div>
+    <p>space-between</p>
+    <div class="container between ">
+        <div class="item">Lorem ipsum dolor,</div>
+        <div class="item">sit amet consectetur adipisicing elit.</div>
+        <div class="item">Impedit dolorum perspiciatis voluptas dolore iste nulla quibusdam ipsa,</div>
+        <div class="item">officiis suscipit incidunt? Quibusdam,</div>
+        <div class="item"> maxime tenetur voluptas perspiciatis excepturi nemo accusamus!</div>
+        <div class="item">Quasi,</div>
+        <div class="item">reiciendis.</div>
+    </div>
+    <p>space-around</p>
+    <div class="container around">
+        <div class="item">Lorem ipsum dolor,</div>
+        <div class="item">sit amet consectetur adipisicing elit.</div>
+        <div class="item">Impedit dolorum perspiciatis voluptas dolore iste nulla quibusdam ipsa,</div>
+        <div class="item">officiis suscipit incidunt? Quibusdam,</div>
+        <div class="item"> maxime tenetur voluptas perspiciatis excepturi nemo accusamus!</div>
+        <div class="item">Quasi,</div>
+        <div class="item">reiciendis.</div>
+    </div>
+</body>
+</html>

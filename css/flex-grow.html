@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex grow</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 2px solid white;
+            max-width: 300px;
+        }
+        .item{
+            background-color: yellowgreen;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            color: black;
+        }
+        .fg-0{
+            flex-grow: 0;
+        }
+        .fg-1{
+            flex-grow: 1;
+        }
+        .fg-2{
+            flex-grow: 2;
+        }
+        .fg-3{
+            flex-grow: 3;
+        }
+    </style>
+</head>
+<body>
+    <!--Define a proporcionalidade de crescimento dos itens, respeitando o tamanho de seus conteúdos internos-->
+    <!--OBS: não funciona com justify-content aplicado ao flex container-->
+    <!---->
+    <H1>Flex-grow</H1>
+    <p>flex-grow:0</p>
+    <div class="flex-container">
+        <div class="item fg-0">A</div>
+        <div class="item fg-0">B</div>
+        <div class="item fg-0">C</div>
+        <div class="item fg-0">D</div>
+    </div>
+    <p>flex-grow:1</p>
+    <div class="flex-container">
+        <div class="item fg-1">A</div>
+        <div class="item fg-1">B</div>
+        <div class="item fg-1">C</div>
+        <div class="item fg-1">D</div>
+    </div>
+    <p>flex-grow: alternado</p>
+    <div class="flex-container">
+        <div class="item fg-1">A</div>
+        <div class="item fg-2">B</div>
+        <div class="item fg-1">C</div>
+        <div class="item fg-2">D</div>
+    </div>
+    <p>flex-grow: alternado</p>
+    <div class="flex-container">
+        <div class="item fg-1">Aaaaaaa</div>
+        <div class="item fg-1">Bb</div>
+        <div class="item fg-1">Cccc</div>
+        <div class="item fg-1">D</div>
+    </div>
+</body>
+</html>

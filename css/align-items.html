@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align itens</title>
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid azure;
+            display: flex;
+        }
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            flex: 1;/*faz uma distribuição dos itens de acordo com seu conteúdo*/
+        }
+        .center{
+            align-items: center;
+        }
+        .stretch{
+            align-items:stretch;/*faz os elementos crescerem de acordo com o mair item*/
+        }
+        .start{
+            align-items: flex-start;
+        }
+        .end{
+            align-items: flex-end;
+        }
+        .base{
+            align-items:baseline;
+        }
+        .col{
+            flex-direction: column;
+        }
+        .central{
+            height: 300px;
+            justify-content: center;   
+        }
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Usando align-items</h1>
+    <h2>row</h2>
+    <p>center</p>
+    <section class="container center">
+        <div class="item">Item 1</div>
+        <div class="item">Item do item que tem outro item</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. .</div>
+    </section>
+
+    <p>stretch</p>
+    <section class="container stretch">
+        <div class="item">Item 1</div>
+        <div class="item">Item do item que tem outro item</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. .</div>
+    </section>
+
+    <p>flex-start</p>
+    <section class="container start">
+        <div class="item">Item 1</div>
+        <div class="item">Item do item que tem outro item</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. .</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container end">
+        <div class="item">Item 1</div>
+        <div class="item">Item do item que tem outro item</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. .</div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container base">
+        <div class="item"><br/> Item 1 2 3</div>
+        <div class="item">Item do item que tem outro item</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. .</div>
+    </section>
+    
+    <h2>column</h2>
+
+    <p>center</p>
+    <section class="container center col">
+        <div class="item">Item 1</div>
+        <div class="item">Item do item que tem outro item</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. .</div>
+    </section>
+
+    <p>stretch</p>
+    <section class="container stretch col">
+        <div class="item">Item 1</div>
+        <div class="item">Item do item que tem outro item</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. .</div>
+    </section>
+
+    <p>flex-start</p>
+    <section class="container start col">
+        <div class="item">Item 1</div>
+        <div class="item">Item do item que tem outro item</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. .</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container end col">
+        <div class="item">Item 1</div>
+        <div class="item">Item do item que tem outro item</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. .</div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container base col">
+        <div class="item"><br/> Item 1 2 3</div>
+        <div class="item">Item do item que tem outro item</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. .</div>
+    </section>
+
+    <p>alinhamento ao centro da tela</p>
+    <section class="container central center">
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </div>
+    </section>
+    <br>
+</body>
+</html>

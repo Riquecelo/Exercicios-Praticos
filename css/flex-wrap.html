@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex wrap</title>
+    <style>
+        /*configuração para o container*/
+        .flex-container{
+            display: flex;
+            height: 150px;
+            border: 2px solid rgb(234, 247, 62);
+            max-width: 300px;
+        }
+        .flex-container-col{
+            display: flex;
+            flex-direction: column;
+            max-height: 150px;
+            border: 2px solid rgb(253, 252, 252);
+            width: 300px;
+        }
+
+        /*configuração para os itens
+        (elementos filhos do container)*/
+        .item{
+            font-size: 24px;
+            color: black;
+            height: 50%;
+            text-align: center;
+            min-width: 100px;
+            line-height: 50px;
+        }
+        .n-item{
+            font-size: 24px;
+            color: black;
+            height: 50%;
+            text-align: center;
+            width: 100px;
+            line-height: 50px;
+        }
+        .c-item{
+            font-size: 24px;
+            color: black;
+            height: 100px;
+            text-align: center;
+            width: 50%;
+            line-height: 50px;
+        }
+        .nowrap{
+            flex-wrap: nowrap;
+        }
+        .wrap{
+            flex-wrap: wrap;
+        }
+        .wrap-reverse{
+            flex-wrap: wrap-reverse;
+        }
+
+        /*cores dos elementos*/
+        .azul{
+            background-color: dodgerblue;
+        }
+        .verde{
+            background-color: lightgreen;
+        }
+        .laranja{
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <h1>no wrap(comportamento padrão)</h1>
+    <p>com tamanhos definidos mínimos e máximos</p>
+    <div class="flex-container">
+        <div class="item laranja">1</div>
+        <div class="item verde">2</div>
+        <div class="item azul">3</div>
+    </div>
+    <div class="flex-container">
+        <div class="item laranja">1</div>
+        <div class="item verde">2</div>
+        <div class="item azul">3</div>
+        <div class="item laranja">4</div>
+    </div>
+
+    <p>com tamanhos definidos</p>
+    <div class="flex-container">
+        <div class="n-item laranja">1</div>
+        <div class="n-item verde">2</div>
+        <div class="n-item azul">3</div>
+        <div class="n-item laranja">1</div>
+        <div class="n-item verde">2</div>
+        <div class="n-item azul">3</div>
+        <div class="n-item laranja">1</div>
+        <div class="n-item verde">2</div>
+        <div class="n-item azul">3</div>
+    </div>
+
+    <h1>wrap</h1>
+    <p>quebra de linha, enviando elemento para baixo</p>
+    <div class="flex-container wrap">
+        <div class="item laranja">1</div>
+        <div class="item verde">2</div>
+        <div class="item laranja">3</div>
+        <div class="item verde">4</div>
+    </div>
+
+    <h1>wrap reverse</h1>
+    <p>quebra de linha, enviando elemento para cima</p>
+    <div class="flex-container wrap-reverse">
+        <div class="item azul">1</div>
+        <div class="item verde">2</div>
+        <div class="item azul">3</div>
+        <div class="item verde">4</div>
+    </div>
+    
+    <h1>comportamento em coluna</h1>
+    <p>com tamanhos definidos mínimos e máximos</p>
+    <div class="flex-container-col ">
+        <div class="item azul">1</div>
+        <div class="item verde">2</div>
+        <div class="item laranja">3</div>      
+    </div><br>
+    <div class="flex-container-col">
+        <div class="item laranja">1</div>
+        <div class="item verde">2</div>
+        <div class="item azul">3</div>
+        <div class="item laranja">4</div>
+    </div>
+    <br><br><br>
+    <p>comportamento de elemento em coluna nowrap, com tamanhos máximo e mínimo definidos</p>
+    <div class="flex-container-col">
+        <div class="c-item laranja">1</div>
+        <div class="c-item verde">2</div>
+        <div class="c-item azul">3</div>
+        <div class="c-item laranja">1</div>
+        <div class="c-item verde">2</div>   
+    </div>
+    <br><br><br><br><br>
+
+    <h1>wrap</h1>
+    <p>comportamento de elementos em coluna com wrap</p>
+    <div class="flex-container-col wrap">
+        <div class="item laranja">1</div>
+        <div class="item verde">2</div>
+        <div class="item laranja">3</div>
+        <div class="item verde">4</div>
+    </div>    
+    <br>
+    <h1>wrap reverse</h1>
+    <p>comportamento de elementos em coluna com wrap-reverse</p>
+    <div class="flex-container-col wrap-reverse">
+        <div class="item azul">1</div>
+        <div class="item verde">2</div>
+        <div class="item azul">3</div>
+        <div class="item verde">4</div>
+    </div>
+    <br>
+</body>
+</html>
