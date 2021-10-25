@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - aling self</title>
+    <style>
+        .flex-container{
+            max-width: 350px;
+            border:1px solid white;
+            margin-bottom: 10px;
+            display: flex;
+        }
+        .item{
+            background-color: tomato;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+        .center{
+            align-self: center;
+        }
+        .start{
+            align-self: flex-start;
+        }
+        .end{
+            align-self: flex-end;
+        }
+        .baseline{
+            align-self: baseline;
+        }
+        .stretch{
+            align-self: stretch;
+        }
+        .auto{
+            align-self: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Prática com align-self</h1>
+    <p>auto</p>
+    <section class="flex-container">
+        <div class="item auto">aaa</div>
+        <div class="item auto">Lorem ipsum dolor sit amet.</div>
+        <div class="item auto">123</div>
+        <div class="item auto">item4</div>
+    </section>
+
+    <p>center</p>
+    <section class="flex-container">
+        <div class="item center">aaa</div>
+        <div class="item center">Lorem ipsum dolor sit amet.</div>
+        <div class="item center">123</div>
+        <div class="item center">item4</div>
+    </section>
+
+    <p>start</p>
+    <section class="flex-container">
+        <div class="item start">aaa</div>
+        <div class="item start">Lorem ipsum dolor sit amet.</div>
+        <div class="item start">123</div>
+        <div class="item start">item4</div>
+    </section>
+
+    <p>end</p>
+    <section class="flex-container">
+        <div class="item end">aaa</div>
+        <div class="item end">Lorem ipsum dolor sit amet.</div>
+        <div class="item end">123</div>
+        <div class="item end">item4</div>
+    </section>
+
+    <p>baseline</p>
+    <section class="flex-container">
+        <div class="item baseline"><br> aaa</div>
+        <div class="item baseline">Lorem ipsum dolor sit amet.</div>
+        <div class="item baseline">123</div>
+        <div class="item baseline">item4</div>
+    </section>
+
+    <p>stretch</p>
+    <section class="flex-container">
+        <div class="item stretch"><br> aaa</div>
+        <div class="item stretch">Lorem ipsum dolor sit amet.</div>
+        <div class="item stretch">123</div>
+        <div class="item stretch">item4</div>
+    </section>
+</body>
+</html>

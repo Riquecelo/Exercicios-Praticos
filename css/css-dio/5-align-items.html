@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align items</title>
+
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+        
+        .center{
+            align-items: center;
+        }
+
+        .stretch{
+            align-items: stretch;
+        }
+
+        .start{
+            align-items: flex-start;
+        }
+
+        .end{
+            align-items: flex-end;
+        }
+
+        .baseline{
+            align-items: baseline;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .central{
+            height: 400px;
+            justify-content: center;
+        }
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <p>center</p>
+    <section class="container center">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3 mais algum texto. Lipsum</div>
+    </section>
+
+    <p>stretch</p>
+    <section class="container stretch">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet</div>
+        <div class="item">Item 3 mais algum texto. Lipsum</div>
+    </section>
+
+    <p>flex-start</p>
+    <section class="container start">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3 mais algum texto. Lipsum</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container end">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3 mais algum texto. Lipsum</div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container baseline">
+        <div class="item"><br>Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3 mais algum texto. Lipsum</div>
+    </section>
+
+    <h1>column</h1>
+    <p>flex-start</p>
+    <section class="container start column">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3 mais algum texto. Lipsum</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container end column">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3 mais algum texto. Lipsum</div>
+    </section>
+
+    <p>center</p>
+    <section class="container center column">
+        <div class="item">Item 1</div>
+        <div class="item">Item 3 mais algum texto. Lipsum</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container baseline column">
+        <div class="item"><br>Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3 mais algum texto. Lipsum</div>
+    </section>
+
+    <p>alinhamento central à tela</p>
+    <section class="container central center">
+        <div class="item"> Lorem Ipsum is therefore always free from repetition.</div>
+    </section>
+</body>
+</html>
