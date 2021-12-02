@@ -1,0 +1,38 @@
+[
+    {
+        "nome":"Marcelo",
+        "idade":34,
+        "esta_trabalhando": true,
+        "hobbies": ["programar", "ler", "ver séries"],
+        "estudos":{
+            "Ensino Superior": "Trancado",
+            "Faculdade": "Ufra",
+            "Curso": "Licenciatura da Computação"
+        }
+    },
+
+
+    {
+        "nome":"Carlos",
+        "idade":34,
+        "esta_trabalhando": true,
+        "hobbies": ["programar", "ler", "ver séries"],
+        "estudos":{
+            "Ensino Superior": "Trancado",
+            "Faculdade": "Ufra",
+            "Curso": "Licenciatura da Computação"
+        }  
+    },
+    
+    {
+        "nome":"Júnior",
+        "idade":34,
+        "esta_trabalhando": true,
+        "hobbies": ["programar", "ler", "ver séries"],
+        "estudos":{
+            "Ensino Superior": "Trancado",
+            "Faculdade": "Ufra",
+            "Curso": "Licenciatura da Computação"
+        }  
+    }
+]
