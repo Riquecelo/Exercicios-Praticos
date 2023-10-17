@@ -1,0 +1,56 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.ball{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: red;
+    position: relative;
+    animation: example-two;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+}
+
+@keyframes example-one {
+    from{
+        background-color: blue;
+    }
+    to{
+        background-color: blueviolet;
+    }
+}
+
+@keyframes example-two {
+    0%{
+        background-color: blue;
+        left: 0;
+        top: 0;
+    }
+    25%{
+        background-color: blueviolet;
+        top: 0;
+        left: calc(100% - 100px);
+    }
+    50%{
+        background-color: green;
+        top: calc(100% - 100px);
+        left: calc(100% - 100px);
+    }
+    75%{
+        background-color: yellow;
+        top: calc(100% - 100px);
+        left: 0;
+    }
+    100%{
+        background-color: red;
+        left: 0;
+        top: 0;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .ball{
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-color: blueviolet;
+            position: relative;
+            animation-name: ball;
+            animation-delay: 2s;
+            animation-duration: 3s;
+
+            animation-fill-mode: both;
+            /* animation-fill-mode: backwards; */
+            /* animation-fill-mode: forwards; */
+        }
+
+        @keyframes ball {
+            0%{
+                left: 0;
+                background-color: aquamarine;
+            }
+            50%{
+                left: 50%;
+                background-color: yellow;
+            }
+            100%{
+                left: calc(100% - 100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>

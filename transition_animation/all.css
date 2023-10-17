@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box-green{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.box-green{
+    background-color: green;
+    transition: all 1s linear 0s;
+}
+
+.box-green:hover{
+    background-color: pink;
+    transition: all 1s cubic-bezier(0.29, 1.01, 1, -0.68);
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+}

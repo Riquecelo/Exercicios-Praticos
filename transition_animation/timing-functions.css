@@ -1,0 +1,43 @@
+.line{
+    width: 100%;
+    background-color: blue;
+    height: 25px;
+    margin-bottom: 10px;
+    transition: width;
+    transition-duration: 1s;
+}
+
+body:hover .line{
+    width: 20px;
+    background-color: rgb(255, 0, 234);
+    overflow:hidden;
+}
+
+.ease{
+    /*lento-rápido-lento*/
+    transition-timing-function: ease;
+}
+
+.linear{
+    /*mesma velocidade do início ao fim*/
+    transition-timing-function: linear;
+}
+
+.ease-in{
+    /*inicio lento, metade final rápido*/
+    transition-timing-function: ease-in;
+}
+
+.ease-out{
+    /*inicio rápido, metade fianl lento*/
+    transition-timing-function: ease-out;
+}
+
+.ease-in-out{
+    /*extremidades letas e meio rápido*/
+    transition-timing-function: ease-in-out;
+}
+
+.cube{
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
