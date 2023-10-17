@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Item CSS</title>
+    <style>
+        section{
+            display: grid;
+            height: 100vh;
+            width: 100vw;
+
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2px;
+
+            
+        }
+        div{
+            background-color: purple;
+            width: 100px;
+            height: 100px;
+        }
+
+        div:nth-child(1){
+            /*self se refere a ele mesmo*/
+            align-self: end;
+
+            /*justify trabalha no eixo horizontal*/
+            justify-self: center;
+
+            /*place usa o self e justify ao mesmo tempo*/
+            place-self: center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</body>
+</html>

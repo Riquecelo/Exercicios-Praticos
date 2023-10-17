@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralizando com Grid</title>
+
+    <style>
+        section{
+            display: grid;
+
+            width: 100vw;
+            height: 100vh;
+
+            place-content: center;
+        }
+
+        .app{
+            outline: 1px solid salmon;
+
+            height: 40vh;
+            width: 50vw;
+
+            display: grid;
+            place-items: center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="app">Texto</div>
+    </section>
+</body>
+</html>

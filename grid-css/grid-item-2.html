@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Item CSS</title>
+    <style>
+        section{
+            display: grid;
+            height: 100vh;
+            width: 100vw;
+
+            grid-template-columns: repeat(3, 100px);
+            gap: 2px;
+
+            /*altera o eixo vertical e as linhas do grid devem estar definidas*/
+            /* align-items: ; */
+            /* align-content: center; */
+
+            /*altera o eixo horizontal*/
+            /* justify-items: ;
+             */
+            justify-content: center;
+        }
+        div{
+            background-color: purple;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</body>
+</html>

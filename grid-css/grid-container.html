@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Container CSS</title>
+    <style>
+
+        body{
+            
+            height: 100vh;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 20% 1fr 10%;
+        }
+        header{
+            background-color: aqua;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            /*shorthand*/
+            grid-column: 1/3;
+        }
+        main{
+            background-color: blueviolet;
+            grid-column: 1/2;
+        }
+        aside{
+            background-color: palevioletred;
+            grid-column: 2/3;
+        }
+        footer{
+            background-color: chartreuse;
+            grid-column: 1/3;
+        }
+
+        header, main, aside, footer{
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="container">
+    <header>header</header>
+    <main>main</main>
+    <aside>aside</aside>
+    <footer>footer</footer>
+</body>
+</html>

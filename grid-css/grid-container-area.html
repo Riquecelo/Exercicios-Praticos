@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Container Area CSS</title>
+    <style>
+
+        body{
+            
+            height: 100vh;
+        }
+        .container{
+            display: grid;
+            grid-template-areas: 
+            'header header header'
+            'main aside aside'
+            'footer footer footer'
+            ;
+        }
+        header{
+            background-color: aqua;
+            grid-area: header
+        ;
+        }
+        main{
+            background-color: blueviolet;
+            grid-area: main;
+        }
+        aside{
+            background-color: palevioletred;
+            grid-area: aside;
+        }
+        footer{
+            background-color: chartreuse;
+            grid-area: footer;
+        }
+
+        header, main, aside, footer{
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="container">
+    <header>header</header>
+    <main>main</main>
+    <aside>aside</aside>
+    <footer>footer</footer>
+</body>
+</html>
