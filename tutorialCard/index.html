@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowing Corner Hover Effects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card" style="--clr:#0f0">
+            <span>texto</span>
+        </div>
+        <div class="card" style="--clr:#ff0">
+            <span>texto</span>
+        </div>
+        
+    </div>
+</body>
+<script>
+    let cards = document.querySelectorAll('.card')
+    cards.forEach(card =>{
+        card.onmousemove = function(e){
+            let x = e.pageX - card.offsetLeft;
+            let y = e.pageY - card.offsetTop;
+
+            card.style.setProperty('--x', x + 'px');
+            card.style.setProperty('--y', y + 'px');
+        }
+    })
+
+</script>
+<script type="text/javascript" src="vanila-tilt.js"></script>
+<script>
+    VanillaTilt.init(document.querySelectorAll(".card, .cardUltmate"));
+    
+</script>
+</html>
