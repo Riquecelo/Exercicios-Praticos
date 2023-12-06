@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+    margin: 50px;
+}
+
+h1{
+    text-align: center;
+    font-size: 100px;
+}
+
+p{
+    font-size: 30px;
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.hidden{
+    opacity: 0;
+    transition: all 1.5s;
+    filter: blur(30px);
+    transform: translate3d(-100px,0,0);
+}
+
+.visivel{
+    opacity: 1;
+    transition: all 1.5s;
+    filter: blur(0);
+    transform: translate3d(0,0,0);
+}
+.container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.foto img{
+    width: 200px;
+    height: 300px;
+}
+
+.foto.visivel:nth-child(2){
+    transition-delay: 400ms;
+}
+.foto.visivel:nth-child(3){
+    transition-delay: 800ms;
+}
+.foto.visivel:nth-child(4){
+    transition-delay: 1000ms;
+}
