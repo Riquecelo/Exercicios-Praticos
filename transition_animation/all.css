@@ -18,8 +18,9 @@ body{
 
 .box-green:hover{
     background-color: pink;
-    transition: all 1s cubic-bezier(0.29, 1.01, 1, -0.68);
+    transition: all 1s  cubic-bezier(0.29, 1.01, 1, -0.68) ;
     width: 300px;
     height: 300px;
     border-radius: 8px;
+    
 }

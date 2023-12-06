@@ -11,7 +11,7 @@ body{
     border-radius: 100%;
     background-color: red;
     position: relative;
-    animation: example-two;
+    animation: example-one;
     animation-duration: 3s;
     animation-delay: 2s;
     animation-iteration-count: 5;
